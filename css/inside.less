@@ -1,0 +1,158 @@
+//params
+@import "params.less";
+
+.header {
+  background: rgba(5, 6, 8, 0.50);
+  height: 58px;
+}
+
+.logo-box {
+  float: left;
+  width: 160px;
+  border-right: solid 1px rgba(255, 255, 255, 0.15);
+  margin-right: 20px;
+  .logo {
+    display: block;
+    position: relative;
+    padding-top: 10px;
+    &:after {
+      background: url("../images/icon/logo-arrow.png") no-repeat;
+      .before-stand;
+      width: 13px;
+      height: 8px;
+      top: 50%;
+      margin-top: -4px;
+      right: 26px;
+      display: block;
+      .transition;
+    }
+    &.toggle:after {
+      .transform;
+    }
+    img {
+      width: 107px;
+    }
+  }
+}
+
+.top-list {
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 150px;
+  &:before {
+    .before-stand;
+    background: url("../images/icon/toplist-tringle.png") no-repeat;
+    width: 13px;
+    height: 8px;
+    right: 26px;
+    top: -7px;
+  }
+  ul {
+    background: #272e3b;
+    .radius(4px 0 4px 4px);
+    overflow: hidden;
+  }
+  li a {
+    background: url("../images/icon/toplist-disc.png") no-repeat 14px 50%;
+    padding: 15px 10px 15px 23px;
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #7790a2;
+    text-decoration: none;
+    border-top: solid 1px #353e50;
+    .transition;
+    &:hover {
+      background-color: #353e50;
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+}
+
+#main-menu {
+  float: left;
+  max-width: 600px;
+  margin-top: 15px;
+  li {
+    float: left;
+    margin-left: 23px;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+  a {
+    font-size: 15px;
+    color: #7790a2;
+  }
+  a.active {
+    color: @white;
+  }
+  a:hover {
+    color: @white;
+  }
+}
+
+.global-actions {
+  float: right;
+  margin-top: 15px;
+}
+
+.rate-ttl {
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 13px 0 13px 58px;
+  margin-left: 21px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 0 -103px;
+}
+
+.btn {
+  .radius(6px);
+  border: solid 2px @yellow;
+  color: @white;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  &.steam-btn {
+    height: 51px;
+    width: 260px;
+    line-height: 51px;
+    display: block;
+    float: right;
+    .icon {
+      background: url("../images/icon/steam.png") no-repeat;
+      width: 42px;
+      height: 24px;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+}
+
+a.btn.steam-btn:hover {
+  background-color: @yellow;
+  color: #222222;
+  text-decoration: underline;
+
+    i.icon {
+       background-image: url("../images/icon/steam-black.png");
+   }
+}
+
+#rate-time-item {
+  .rate-ttl {
+    background-image: url("../images/icon/rate-time-ico.png");
+  }
+}
+
+
+
+

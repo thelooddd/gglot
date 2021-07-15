@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!-- Change it to your language code -->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Baasik</title>
+	
+	<!-- Meta tags, which google uses as description for page -->
+	<meta name="viewport" content="960px">
+	<meta name="title" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="copyright" content="" />
+	
+	<!-- Keywords, also important -->
+	<meta name="keywords" content="" />
+	
+	<!-- Font styles -->
+	<link rel="stylesheet" href="fonts/fonts.css" />
+	<!-- File for your styles -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/inside.css"/>
+	<!-- Delete string below, if you don't want normalize.css -->
+	<link rel="stylesheet" href="css/normalize.min.css" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body id="rate-time-item">
+
+<div id="cards" class="cards clearfix">
+	<div class="balance">
+		<span>У вас: </span><strong>4 карточки</strong> <br>
+		<span>На сумму: </span><strong>5695 руб.</strong>
+	</div>
+	<div class="money">
+		<span>Ваш баланс: </span><br><b>500 руб.</b>
+	</div>
+	<div class="refill">
+		<input type="text">
+		<input type="submit" class="submit" value="Пополнить">
+	</div>
+	<div class="clearfix"></div>
+	<div class="cards-deposit">
+		<i>Выберите карточки и их количество</i>
+		<ul align="center">
+			<li>
+				<input id="card1" type="checkbox" name="card">
+				<label id="c1" for="card1" class="card-1">
+					<span class="numerator">
+						<i class="minus operation"></i>
+						<input class="counter" type="text" value="1">
+						<i class="plus operation"></i>
+					</span>
+					<img src="images/card1.png" alt="">
+				</label>
+
+				<div class="count">1</div>
+			</li>
+			<li class="c-action">
+				<input id="card2" type="checkbox" name="card">
+				<label id="c2" for="card2" class="card-2">
+					<span class="numerator">
+						<i class="minus operation"></i>
+						<input class="counter" type="text" value="1">
+						<i class="plus operation"></i>
+					</span>
+					<img src="images/card2.png" alt="">
+				</label>
+				<div class="count">3</div>
+			</li>
+			<li>
+				<input id="card3" type="checkbox" name="card" disabled>
+				<label id="c3" for="card3" class="card-3">
+					<span class="numerator">
+						<i class="minus operation"></i>
+						<input class="counter" type="text" value="1">
+						<i class="plus operation"></i>
+					</span>
+					<img src="images/card3.png" alt="">
+				</label>
+			</li>
+			<li><input id="card4" type="checkbox" name="card">
+				<label id="c4" for="card4" class="card-4">
+					<span class="numerator">
+						<i class="minus operation"></i>
+						<input class="counter" type="text" value="1">
+						<i class="plus operation"></i>
+					</span>
+					<img src="images/card4.png" alt="">
+				</label>
+				<div class="count">1</div>
+			</li>
+			<li><input id="card5" type="checkbox" name="card" disabled/>
+				<label id="c5" for="card5" class="card-5">
+					<span class="numerator">
+						<i class="minus operation"></i>
+						<input class="counter" type="text" value="1">
+						<i class="plus operation"></i>
+					</span>
+					<img src="images/card5.png" alt="">
+				</label>
+			</li>
+		</ul>
+		<input type="submit" class="deposit" value="Внести карточки" disabled/>
+	</div>
+	<div class="cards-buy">
+		<ul align="center">
+			<li>
+				<div class="card-logo"><img src="images/buycard1.png" alt=""></div>
+				<div class="card-price"><strong>335 руб.</strong></div>
+				<div class="card-buy"><a href="">Купить</a></div>
+			</li>
+			<li>
+				<div class="card-logo"><img src="images/buycard2.png" alt=""></div>
+				<div class="card-price"><strong>335 руб.</strong></div>
+				<div class="card-buy"><a href="">Купить</a></div>
+			</li>
+			<li>
+				<div class="card-logo"><img src="images/buycard3.png" alt=""></div>
+				<div class="card-price"><strong>335 руб.</strong></div>
+				<div class="card-buy"><a href="">Купить</a></div>
+			</li>
+			<li>
+				<div class="card-logo"><img src="images/buycard4.png" alt=""></div>
+				<div class="card-price"><strong>335 руб.</strong></div>
+				<div class="card-buy"><a href="">Купить</a></div>
+			</li>
+			<li>
+				<div class="card-logo"><img src="images/buycard5.png" alt=""></div>
+				<div class="card-price"><strong>335 руб.</strong></div>
+				<div class="card-buy"><a href="">Купить</a></div>
+			</li>
+			<p>Для чего нужны карточки? Я тотчас подошел к княжне, приглашая её вальсировать, пользуясь свободой здешних обычаев, позволяющих танцевать с незнакомыми дамами. Я ехал на перекладных из Тифлиса. </p>
+		</ul>
+	</div>
+</div>
+
+	<div id="main">
+		<!-- .header-->
+		<header class="header clearfix mb-25">
+			<div class="container">
+				<div class="logo-box rel">
+					<a href="#" class="logo">
+						<img src="images/logo-two.png" alt="">
+					</a>
+					<nav class="top-list">
+						<ul>
+							<li><a href="rate-limit.html">Ставки на лимит</a></li>
+							<li><a href="rate-color.html">Ставки на цвета</a></li>
+						</ul>
+					</nav>
+				</div>
+				<nav id="main-menu">
+					<ul>
+						<li><a href="#">О сайте</a></li>
+						<li><a href="history.html">История</a></li>
+						<li><a href="#">Правила</a></li>
+						<li><a href="support.html">Тех. поддержка</a></li>
+						<li><a href="fairplay.html">Честная игра</a></li>
+					</ul>
+				</nav>
+				<div class="global-actions">
+					<span>Язык:</span>
+					<span class="active">Рус</span> <a href="#">Eng</a>
+				</div>
+			</div><!--.container end-->
+		</header><!-- header end -->
+		<!-- .container -->
+		<section class="container">
+			<div class="clearfix mb-25">
+				<div class="rate-ttl">Ставки на время</div>
+				<a class="btn steam-btn" href="#"> <i class="icon"></i> Войти через Steam</a>
+			</div>
+			<ul class="game-statistic clearfix mb-30">
+				<li>Игр сегодня проведено: <br><strong>1027</strong></li>
+				<li>Игроков онлайн: <br><strong>428</strong></li>
+				<li>Максимальный выигрыш: <br><strong>1150</strong><span>тыс./руб</span></li>
+			</ul>
+		</section>
+		<section class="container pb-25">
+			<ul class="game-type clearfix">
+				<li class="active"><a href="">SuperGame <br><span>На кону:</span><strong> 1 292</strong> руб.</a></li>
+				<li><a href="">SuperGame <br><span>На кону:</span><strong> 951</strong> руб.</a></li>
+				<li><a href="">SuperGame <br><span>На кону:</span><strong> 1 083</strong> руб.</a></li>
+			</ul>
+			<div class="rate-body">
+				<div class="rate-top">
+					<div class="fairplay"><p>Игра <span>№1234567</span></p><a class="fairgame" href="fairplay.html">Честная Игра</a></div>
+					<div class="jackpot">
+							Джек-пот Раунда: <br><strong>1 292</strong><br><p>руб.</p>
+					</div>
+					<div class="timer">Розыгрыш начнется через: <br><script src="js/timer.js"></script></div>
+				</div>
+				<div class="avatars">
+					<ul class="avatars-player" align="center">
+						<li><img src="images/avatar5.png" alt=""><p>84,3%</p></li>
+						<li><img src="images/avatar4.png" alt=""><p>13,6%</p></li>
+						<li><img src="images/avatar1.jpg" alt=""><p>2,1%</p></li>
+					</ul>
+				</div>
+				<div class="game-info box-shadow2">
+					<span class="tittle">Игра началась! Вносите депозиты!</span>
+					<ul class="round-info">
+						<li class="left-side"><span>Хэш-код раунда:</span> 095dg4s85s59996q5355f65aa6588444a39u85 <br><span>Cекретный код:</span> #26431</li>
+						<li class="right-side"><span>Число раунда:</span> 0.565489494972245896328932563253 <br><span>Второй секретный код:</span> #33547</li>
+					</ul>
+					<a href="#" class="deposit">Внести депозит</a>
+					<a href="#cards" class="card fancybox">Внести карточки</a>
+					<div class="clearfix"></div>
+				</div>
+			<div class="players clearfix">
+				<table>
+					<tr class="player-item">
+						<td class="player-avatar"><img src="images/avatar4.png" alt=""></td>
+						<td class="player-deposit">
+						<span>Hilla</span> вложил: <br>
+						<ul class="deposit-items">		
+						<li> <img src="images/chest.png" alt=""> <br> <span>17 руб.</span> </li>
+						<li> <img src="images/m4.png" alt=""> <br> <span>12 руб.</span></li>
+						<li> <img src="images/item.jpg" alt=""> <br> <span>9 руб.</span></li>
+						<li> <img src="images/chest.png" alt=""> <br> <span>17 руб.</span></li>
+						</ul>
+						</td>
+						<td class="player-money">Ставки на сумму: <br><span>55 руб.</span></td>
+						<td class="player-ticket">Билеты: <br>от <span>#1142</span> до <span>#1156</span></td>
+						<td class="player-score">+ 15</td>
+					</tr>
+					<tr class="player-item">
+						<td class="player-avatar"><img src="images/avatar5.png" alt=""></td>
+						<td class="player-deposit">
+						<span>Hilla</span> вложил: <br>
+						<ul class="deposit-items">						
+						<li> <img src="images/key1.png" alt=""> <br> <span>188 руб.</span> </li>
+						<li> <img src="images/key2.png" alt=""> <br> <span>178 руб.</span></li>
+						<li> <img src="images/m4.png" alt=""> <br> <span>7 руб.</span></li>
+						<li> <img src="images/item.jpg" alt=""> <br> <span>9 руб.</span></li>
+						<li> <img src="images/item.jpg" alt=""> <br> <span>9 руб.</span></li>
+						<li> <img src="images/item.jpg" alt=""> <br> <span>9 руб.</span></li>
+						<li> <img src="images/m4.png" alt=""> <br> <span>12 руб.</span></li>
+						<li> <img src="images/awp.png" alt=""> <br> <span>748 руб.</span></li>
+						<li> <img src="images/chest.png" alt=""> <br> <span>17 руб.</span></li>
+						<li> <img src="images/chest.png" alt=""> <br> <span>17 руб.</span></li>
+						</ul>
+						</td>
+						<td class="player-money">Ставки на сумму: <br><span>1208 руб.</span></td>
+						<td class="player-ticket">Билеты: <br>от <span>#6</span> до <span>#1142</span></td>
+						<td class="player-score">+ 1137</td>
+					</tr>
+					<tr class="player-item">
+						<td class="player-avatar"><img src="images/avatar1.jpg" alt=""></td>
+						<td class="player-deposit">
+						<span>Hilla</span> вложил: <br>
+						<ul class="deposit-items">						
+						<li> <img src="images/m4.png" alt=""> <br> <span>12 руб.</span> </li>
+						<li> <img src="images/chest.png" alt=""> <br> <span>17 руб.</span></li>
+						</ul>
+						</td>
+						<td class="player-money">Ставки на сумму: <br><span>55 руб.</span></td>
+						<td class="player-ticket">Билеты: <br>от <span>#1142</span> до <span>#1156</span></td>
+						<td class="player-score">+ 6</td>
+					</tr>
+				</table>
+			</div>
+			<div class="game-info copy box-shadow2">
+					<span class="tittle">Игра началась! Вносите депозиты!</span>
+					<ul class="round-info">
+						<li class="left-side"><span>Хэш-код раунда:</span> 095dg4s85s59996q5355f65aa6588444a39u85 <br><span>Cекретный код:</span> #26431</li>
+						<li class="right-side"><span>Число раунда:</span> 0.565489494972245896328932563253 <br><span>Второй секретный код:</span> #33547</li>
+					</ul>
+					<a href="#" class="deposit">Внести депозит</a>
+					<a href="#cards" class="card">Внести карточки</a>
+					<div class="clearfix"></div>
+			</div>
+			</div>
+		</section><!-- .container end -->
+
+		<div class="chat-mini-box">
+			  <p>Онлайн чат</p>
+			  <a href="#" class="chat-mini"></a>  
+		</div>
+		<div class="chat mini">
+			<div class="chat-items mini chat-color clearfix mCustomScrollbar" data-mcs-theme="dark-thick">
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+					<div class="item clearfix">
+						<div class="chat-avatar"><img src="images/chat-ava.png" alt=""></div>
+						<p><span>KompOst: </span> Он уже не мог снова сесть за бумаги от волнения и ожидания и стал бродить по кабинету.</p>
+					</div>
+		</div>
+				<div class="chat-bottom mini">
+					<form action="">
+						<textarea name="" id="" placeholder="Напишите сообщение..."></textarea>
+						<input type="submit" value="Отправить">
+					</form>
+				</div>
+			</div>
+		<!-- .footer -->
+		<footer class="footer container">
+			<div class="copyright">©2016 gglot. Все права защищены</div>
+		</footer><!-- .footer end -->
+	</div><!-- #home end -->
+	<!-- File for your js code -->
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- Add fancyBox -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
